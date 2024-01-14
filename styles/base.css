@@ -80,6 +80,11 @@ ul {
     list-style: none;
 }
 
+li {
+    font-family: 'Courier Prime', monospace;
+    font-size: .8em;
+}
+
 footer {
     font-family: 'Courier Prime', monospace; 
     background-color: #b0c4b1;
