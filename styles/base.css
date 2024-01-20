@@ -24,19 +24,55 @@ h3, div {
     font-family: 'Yantramanav', sans-serif;
 }
 
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:400;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: black;
+	color: #f7e1d7;
+}
+
+#menu::before {
+	content: "≡";
+}
+
 nav {
-    display: flex;
-    flex-direction: column;
     background-color: black;
 }
 
-nav a {
+
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li{
+    display: none;
+}
+
+.navigation a{
+    display: block;
     font-family: 'Yantramanav', sans-serif;
     font-size: 2em;
     color:#f7e1d7;
     text-align: center;
     text-decoration: none;
-    padding: 1rem 0;
+    transition: 0.5s;
+}
+
+.active::first-line{
+    text-decoration: underline #f7e1d7;
+}
+
+.show > li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
 }
 
 main {
@@ -44,13 +80,13 @@ main {
     max-width: 80%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 5fr 2fr;
+    grid-template-rows: 4rem 2fr 1fr 2fr;
     gap: 2%;
 }
 
 main h2 {
     font-family: 'Courier Prime', monospace;
-    border-bottom:3px solid black;
+    text-decoration: underline black;
     text-align: center;
 }
 
@@ -84,6 +120,21 @@ ul {
 li {
     font-family: 'Courier Prime', monospace;
     font-size: .8em;
+}
+
+a{
+    text-decoration: none;
+}
+
+.card a::after{
+    content: "  |  ";
+    color:black;
+}
+
+iframe{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 footer {
