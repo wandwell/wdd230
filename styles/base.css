@@ -45,7 +45,7 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 5fr 2fr;
-    gap: 1rem;
+    gap: 2%;
 }
 
 main h2 {
