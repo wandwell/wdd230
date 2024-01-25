@@ -1,0 +1,17 @@
+@media screen and (min-width:750px) {
+    main{
+        grid-template-columns: 1rem 1fr 1fr 1rem;
+    }
+    
+    #contrast{
+        grid-column: 2/3;
+    }
+
+    #repetition{
+        grid-column: 3/4;
+    }
+
+    #hicks{
+        grid-column: 2/4;
+    }
+}
