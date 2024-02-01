@@ -30,7 +30,7 @@ h3, div {
 	font-weight:400;
 	text-decoration: none;
 	padding: .5rem .75rem;
-	background-color: black;
+	background-color: white;
 	color: #f7e1d7;
 }
 
@@ -91,7 +91,7 @@ main h2 {
 }
 
 .card {
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 5px;
     font-size: 2em;
 }
