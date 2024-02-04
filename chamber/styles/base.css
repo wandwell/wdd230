@@ -1,0 +1,162 @@
+:root{
+    --main-color: #1F5C84;
+    --accent-color: #F6C98E;
+    --font-color: #39362D;
+    --background: #E0E0E0;
+    --heading: 'Gelasio', serif;
+    --detail: 'Sarala', sans-serif;
+}
+
+h1, h2, h3, h4{
+    font-family: var(--heading);
+    color: var(--font-color);
+}
+
+p{
+    font-family: var(--detail);
+    color: var(--font-color);
+}
+
+body{
+    background-color:var(--background);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: var(--accent-color);
+    color: var(--font-color);
+    border-top: 2em solid var(--main-color);
+    border-bottom: 2em solid var(--main-color);
+}
+
+header .chamber-logo{
+    object-fit: contain;
+    align-content: end;
+    flex-grow: 1;
+}
+
+h1{
+    flex-grow: 3;
+    text-align: center;
+}
+
+header .social{
+    flex-grow: 2;
+    min-width: 65px;
+    text-align: right;
+    margin-right: 5px;
+}
+
+nav{
+    background-color: var(--main-color);
+    border: 3px solid var(--accent-color);
+    margin-bottom: 10px;
+}
+
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:400;
+	text-decoration: none;
+	padding: 0 .75rem;
+	color: var(--accent-color);
+}
+
+#menu::before{
+    content: "≡";
+}
+
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li{
+    display: none;
+}
+
+.navigation a{
+    background-color: var(--main-color);
+    display: block;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 2em;
+    color:var(--accent-color);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.active::first-line{
+    text-decoration: underline var(--accent-color);
+}
+
+.show > li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+main{
+    display: grid;
+    max-width: 90%;
+    margin: 0 auto;
+    grid-template-columns: 10px 1fr 10px;
+    grid-template-rows: 3fr 6fr 2fr 1fr 10px;
+    gap: 10px;
+}
+
+#hero{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.action{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 100px;
+    height: 30px;
+}
+
+section{
+    background-color: var(--main-color);
+    grid-column: 2/3;
+}
+
+section div{
+    background-color: var(--background);
+    text-align: center;
+    margin: 10px;
+}
+
+.spotlight{
+    display: flex;
+    flex-direction: column;
+}
+
+.spotlight div{
+    flex-grow: 1;
+    background-color: var(--background);
+}
+
+footer{
+    background-color: #1F5C84;
+}
+
+#citation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#citation p{
+    color: var(--background);
+    text-align: center;
+    font-size: .75em;
+}
+

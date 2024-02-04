@@ -1,0 +1,56 @@
+@media screen and (min-width:750px) {
+
+    .navigation{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0rem;
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    .navigation li{
+        display: block;
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    main{
+        grid-template-columns: 10px 1fr 3fr 10px;
+        grid-template-rows: 4fr 1fr 1fr 10px;
+    }
+
+    #hero{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+    
+    .action{
+        grid-column: 2/4;
+        grid-row: 1/2;
+        width: 100px;
+        height: 30px;
+    }
+
+    .spotlight{
+        grid-column: 2/4;
+        flex-direction: row;
+    }
+
+    #events{
+        grid-column: 3/4;
+    }
+
+    #weather{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+}

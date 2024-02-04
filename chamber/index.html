@@ -10,20 +10,83 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="">
     <meta property="og:url" content="https://wandwell.github.io/wdd230/chamber">
-    <link rel="icon" href="favicon.ico"> 
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio&family=Sarala&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
-    <header></header>
+    <header>
+        <img class="chamber-logo" src="images/logo.png" alt="logo of Great Falls Chamber of Commerce" width="100px" height="100px">
+        <h1>Great Falls Chamber of Commerce</h1>
+        <div class="social">
+            <img src="images/facebook.png" alt="facebook logo" width="30px">
+            <img src="images/linkedin.png" alt="Linkedin Logo" width="30px">
+        </div> 
+    </header>
     <nav>
         <a id="menu" href="#"></a>
-        <ul>
+        <ul class="navigation">
             <li><a class="active" href="#">Home</a></li>
             <li><a href="discover">Discover</a></li>
             <li><a href="directory">Directory</a></li>
             <li><a href="join">Join</a></li>
         </ul>
     </nav>
-    <main></main>
-    <footer></footer>
+    <main>
+        <img id="hero" src="images/great-falls.jpg" alt="Image of Great Falls' 10th Ave Bridge">
+        <button class="action">Join</button>
+        <section class="spotlight">
+            <div>
+                <h3>Brush Crazy</h3>
+                <img src="logo" alt="business logo" width="200px" height="200px">
+                <p>details</p>
+                <h4>address</h4>
+            </div>        
+            <div>
+                <h3>Feather Your Nest</h3>
+                <img src="logo" alt="business logo" width="200px" height="200px">
+                <p>details</p>
+                <h4>address</h4>
+            </div>
+            <div>
+                <h3>Ford's Drive-In</h3>
+                <img src="logo" alt="business logo" width="200px" height="200px">
+                <p>details</p>
+                <h4>address</h4>
+            </div>
+        </section>
+        <section id="events">
+            <div>
+                <h3>Annual Easter Egg Hunt</h3>
+                <p>details</p>
+            </div>
+        </section>
+        <section id="weather">
+            <div>
+                <h3>Weather</h3>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="address">
+
+        </div>
+        <div class="contact">
+
+        </div>sd
+        <div id="citation">
+            <p id="copyright">@ year Great Falls Chamber</p>
+            <p>Sariah Wandler</p>
+            <p> WDD 230 Project</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
 </body>
 </html>
