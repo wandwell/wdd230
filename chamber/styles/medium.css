@@ -39,7 +39,7 @@
         height: 30px;
     }
 
-    .spotlight{
+    #spotlight{
         grid-column: 2/4;
         flex-direction: row;
     }

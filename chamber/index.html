@@ -29,6 +29,10 @@
         </div> 
     </header>
     <nav>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
         <a id="menu" href="#"></a>
         <ul class="navigation">
             <li><a class="active" href="#">Home</a></li>
@@ -40,20 +44,20 @@
     <main>
         <img id="hero" src="images/great-falls.jpg" alt="Image of Great Falls' 10th Ave Bridge">
         <button class="action">Join</button>
-        <section class="spotlight">
-            <div>
+        <section id="spotlight">
+            <div class="mode">
                 <h3>Brush Crazy</h3>
                 <img src="logo" alt="business logo" width="200px" height="200px">
                 <p>details</p>
                 <h4>address</h4>
             </div>        
-            <div>
+            <div class="mode">
                 <h3>Feather Your Nest</h3>
                 <img src="logo" alt="business logo" width="200px" height="200px">
                 <p>details</p>
                 <h4>address</h4>
             </div>
-            <div>
+            <div class="mode">
                 <h3>Ford's Drive-In</h3>
                 <img src="logo" alt="business logo" width="200px" height="200px">
                 <p>details</p>
@@ -61,13 +65,16 @@
             </div>
         </section>
         <section id="events">
-            <div>
+            <div class="mode">
                 <h3>Annual Easter Egg Hunt</h3>
-                <p>details</p>
+                <p>Join us March 31st for the Great Falls Annual Easter Egg Hunt. Along with 
+                    Easter Eggs filled by our Members and fun activities for the kids, this is 
+                    a great opportunity to see meet local businesses and see what they have to offer
+                </p>
             </div>
         </section>
         <section id="weather">
-            <div>
+            <div class="mode">
                 <h3>Weather</h3>
             </div>
         </section>
@@ -78,7 +85,7 @@
         </div>
         <div class="contact">
 
-        </div>sd
+        </div>
         <div id="citation">
             <p id="copyright">@ year Great Falls Chamber</p>
             <p>Sariah Wandler</p>
@@ -88,5 +95,6 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/darkmode.js"></script>
 </body>
 </html>
