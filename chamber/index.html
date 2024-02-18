@@ -21,7 +21,7 @@
 </head>
 <body>
     <header>
-        <img class="chamber-logo" src="images/logo.png" alt="logo of Great Falls Chamber of Commerce" width="100px" height="100px">
+        <img class="chamber-logo" src="images/logo.webp" alt="logo of Great Falls Chamber of Commerce" width="100px" height="100px">
         <h1>Great Falls Chamber of Commerce</h1>
         <div class="social">
             <img src="images/facebook.png" alt="facebook logo" width="30px">
@@ -42,7 +42,13 @@
         </ul>
     </nav>
     <main>
-        <img id="hero" src="images/great-falls.jpg" alt="Image of Great Falls' 10th Ave Bridge">
+        <div id="hero">
+            <picture>
+                <source srcset="images\wdd230-small.webp" media="(max-width: 500px)">
+                <source srcset="images\wdd230-med.webp" media="(max-width: 750px)">
+                <img src="images/wdd230-org.webp" alt="People talking">
+            </picture>
+        </div>
         <button class="action">Join</button>
         <section id="spotlight">
             <div class="mode">
@@ -76,6 +82,12 @@
         <section id="weather">
             <div class="mode">
                 <h3>Weather</h3>
+                <h4>Tempature:</h4>
+                <h4 class="temp">23</h4>
+                <h4>Windspeed</h4>
+                <h4 class="wind">11</h4>
+                <h4>Windchill</h4>
+                <h4 class="windchill"></h4>
             </div>
         </section>
     </main>
@@ -96,5 +108,6 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>

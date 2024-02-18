@@ -163,11 +163,14 @@ main{
 }
 
 #hero{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     grid-column: 2/3;
     grid-row: 1/2;
+}
+
+#hero img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .action{
@@ -196,6 +199,20 @@ section div{
 #spotlight div{
     flex-grow: 1;
     background-color: var(--background);
+}
+
+#weather div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+#weather h3{
+    grid-column: 1/3;
+}
+
+.temp, .wind, .windchill{
+    grid-column: 2/3;
 }
 
 footer{

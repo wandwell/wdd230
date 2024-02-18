@@ -1,4 +1,4 @@
-const nav = document.querySelector('.navigation')
+const nav = document.querySelector('.navigation');
 const menubutton = document.querySelector('#menu');
 
 // Add a click event listender to the hamburger button and use a callback function that toggles the list element's list of classes.
