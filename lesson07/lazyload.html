@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LazyLoad</title>
+    <meta name="author" content="Sariah Wandler">
+    <meta name="description" content="Demonstration of lazy loading for images">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+<body>
+    <header>
+        <h1>Lazy Load Demonstration</h1>
+    </header>
+    <main>
+        <picture>
+            <img src="https://picsum.photos/400/600?random=1" alt="placeholder" loading="lazy" width="400px" height="600px">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/400/600?random=2" alt="placeholder" loading="lazy" width="400px" height="600px">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/400/600?random=3" alt="placeholder" loading="lazy" width="400px" height="600px">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/400/600?random=4" alt="placeholder" loading="lazy" width="400px" height="600px">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/400/600?random=5" alt="placeholder" loading="lazy" width="400px" height="600px">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/400/600?random=6" alt="placeholder" loading="lazy" width="400px" height="600px">
+        </picture>
+    </main>
+    <footer>
+        <p id="copyright">@ year <br> Sariah Wandler <br> Montana, United States</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>

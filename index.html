@@ -22,7 +22,7 @@
 </head>
 <body>
     <header>
-        <img src="images/profile.webp" alt="Profile Picture of Sariah Wandler">
+        <img src="images/profile.webp" alt="Profile Picture of Sariah Wandler" width="200px" height="300px">
         <h1>Sariah Wandler</h1>
     </header>
     <a id="menu" href="#"></a>
@@ -80,7 +80,8 @@
                     </li>
                     <li>
                         07:
-                        <a></a>
+                        <a href="lesson07/lazyload.html">Lazy Loading Demonstration</a>
+                        <a href="lesson07/bom.html">Book of Mormon - Favorites - Enhanced</a>
                     </li>
                     <li>
                         08:
@@ -102,10 +103,14 @@
                     <input placeholder="weather">
                 </div>
                 <div>
-                    <input placeholder="times page was visited">
+                    <h4>Page Visits</h4>
+                    <h4 class="count"></h4>
                 </div>
             </section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d345110.97237785766!2d-111.310486!3d47.486417!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1705728308460!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <picture>
+                <source srcset="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21559.028636754738!2d-111.30732086197231!3d47.511755812388564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1708815978035!5m2!1sen!2sus" media="(max-width: 750px)">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21559.028636754738!2d-111.30732086197231!3d47.511755812388564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1708815978035!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </picture>
         </div> 
     </main>
     <footer>
@@ -114,5 +119,6 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/countvisits.js"></script>
 </body>
 </html>
