@@ -21,7 +21,20 @@
 
     main{
         grid-template-columns: 10px 1fr 3fr 10px;
-        grid-template-rows: 2fr 1fr 1fr 10px;
+    }
+
+    .sidebar{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .discover{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .discover img:hover{
+        box-shadow: 0 0 50px #333;;
     }
 
     #hero{
