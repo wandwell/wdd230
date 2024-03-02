@@ -1,0 +1,42 @@
+form{
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    padding-bottom: 2rem;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    border-radius: 5px;
+    font-family: var(--monospace);
+    font-size: 1.5em;
+    padding: .5rem;
+}
+
+input {
+    display: block;
+    padding: .5rem;
+    margin-right: 1rem;
+    width: 100%;
+    margin: 0 5% 0 3%;
+    width: 92%;
+    border-radius: 5px;
+}
+
+#value{
+    float: right;
+    margin-right: 50%;
+}
+
+input[type="range"]{
+    height: 2rem;
+}
+
+input[type="submit"]{
+    background-color: var(--background);
+    font-family: var(--sans-serif);
+    margin-left: 12%;
+    width: 76%;
+}

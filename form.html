@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="author" content="Sariah Wandler">
+    <meta name="description" content="WDD 230 - Web Frontend Development Form">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Yantramanav&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <img src="images/profile.webp" alt="Profile Picture of Sariah Wandler" width="200px" height="300px">
+        <h1>Sariah Wandler</h1>
+    </header>
+    <a id="menu" href="#"></a>
+    <nav>
+        <ul class="navigation">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://www.byui.edu/">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form method="get" action="record.html">
+            <label>Username<input type="text" id="user" name="user" required></label>
+            <label>Password<input type="password" id="pass1" name="password1" pattern="[A-Za-z0-9]{8,}"></label>
+            <label>Re-Enter Password<input type="password" id="pass2" name="password2" required></label>
+            <div id="message"></div>
+            <label>Email<input type="email" id="email" name="email" pattern="[a-zA-Z0-9_.\-]+@byui.edu" title="Please use a valid byui email." placeholder="someone@byui.edu" required></label>
+            <label>Page Rating
+                <div id="value">1</div>
+                <input type="range" id="rating" name="rating" min="1" max="10" value="1" step="1" list="values"></label>
+            <datalist id="values">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </datalist>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <p id="copyright">@ year <br> Sariah Wandler <br> Montana, United States</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/validateform.js"></script>
+</body>
+</html>
