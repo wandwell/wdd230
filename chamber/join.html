@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great Falls Chamber of Commerce Discover</title>
+    <meta name="description" content="Describes Membership Benefits and Contains Membership Application">
+    <meta name="author" content="Sariah Wandler">
+    <meta property="og:title" content="Great Falls Chamber of Commerce Join - Sariah Wandler">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://wandwell.github.io/wdd230/chamber">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio&family=Sarala&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <img class="chamber-logo" src="images/logo.webp" alt="logo of Great Falls Chamber of Commerce" width="100px" height="100px">
+        <h1>Great Falls Chamber of Commerce</h1>
+        <div class="social">
+            <img src="images/facebook.png" alt="facebook logo" width="30px">
+            <img src="images/linkedin.png" alt="Linkedin Logo" width="30px">
+        </div> 
+    </header>
+    <nav>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+        <a id="menu" href="#"></a>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory">Directory</a></li>
+            <li><a class="active" href="#">Join</a></li>
+        </ul>
+    </nav>
+    <main id="join">
+        <form method="get" action="thankyou.html">
+            <label>First Name
+                <input type="text" id="fname" name="fname" required>
+            </label>
+            <label>Last Name
+                <input type="text" id="lname" name="lname" required>
+            </label>
+            <label>Email
+                <input type="email" id="email" name="email" placeholder="someone@gmail.com" required>
+            </label>
+            <label>Phone
+                <input type="tel" id="phone" name="phone" required>
+            </label>
+            <label>Position in Organization
+                <input type="text" id="position" name="position" required>
+            </label>
+            <label>Organization
+                <input type="text" id="business" name="business" required>
+            </label>
+            <label>Description of Organization
+                <textarea name="description" id="description"></textarea>
+            </label>
+            <div>Membership Level</div>
+            <label>Non Profit
+                <input type="radio" id="level" name="level" value="np">
+            </label>
+            <label>Bronze
+                <input type="radio" id="level" name="level" value="bronze">
+            </label>
+            <label>Silver
+                <input type="radio" id="level" name="level" value="silver">
+            </label>
+            <label>Gold
+                <input type="radio" id="level" name="level" value="gold">
+            </label>
+            <input type="hidden" id="dateSubmitted" name="dateSubmitted">
+            <input type="submit" value="Join Now">
+        </form>
+        <table class="sidebar">
+            <thead>
+                <tr>
+                    <th colspan="3" scope="colgroup">Membership Levels</th>
+                </tr>
+                <tr>
+                    <th scope="1"></th>
+                    <th scope="1">Price</th>
+                    <th scope="1">Benefits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="1">Bronze</th>
+                    <td scope="1">$25/month</td>
+                    <td scope="1">
+                        <ul>
+                            <li>Networking Opportunities</li>
+                            <li>Business Referrals</li>
+                            <li>Access to Chamber Resources & Discounts</li>
+                        </ul>
+                </tr>
+                <tr>
+                    <th scope="1">Silver</th>
+                    <td scope="1">$50/month</td>
+                    <td scope="1">
+                        <ul>
+                            <li>Featured in Business Spotlights</li>
+                            <li>Sponsorship Opportunities</li>
+                            <li>Invitations to Exclusive Events</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="1">Gold</th>
+                    <td scope="1">$75/month</td>
+                    <td scope="1">
+                        <ul>
+                            <li>VIP Services</li>
+                            <li>Executive Networking</li>
+                            <li>Strategic Partnerships</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="1">Non-Profit</th>
+                    <td scope="1">$0/month</td>
+                    <td scope="1">
+                        <ul>
+                            <li>Networking Opportunities</li>
+                            <li>Referrals</li>
+                            <li>Access to Chamber Resources & Discounts</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <div class="address">
+
+        </div>
+        <div class="contact">
+
+        </div>
+        <div id="citation">
+            <p id="copyright">@ year Great Falls Chamber</p>
+            <p>Sariah Wandler</p>
+            <p> WDD 230 Project</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/validateform.js"></script>
+</body>
+</html>

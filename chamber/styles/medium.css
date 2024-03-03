@@ -66,4 +66,18 @@
         grid-row: 3/4;
     }
 
+    #join{
+        grid-template-columns: 1fr 1fr;
+        border-radius: 6px;
+    }
+
+    form{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .thanks{
+        grid-column: 1/4;
+        height: 4rem;
+    }
 }

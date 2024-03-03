@@ -163,6 +163,7 @@ main{
 
 .sidebar{
     grid-row: 1/2;
+    grid-column: 2/3;
 }
 
 .discover{
@@ -251,4 +252,117 @@ footer{
 
 .dark > *{
     color: var(--background);
+}
+
+form{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 100%;
+    background-color: var(--main-color);
+    padding: 1rem;
+    }
+
+label{
+    color: var(--background);
+    font-family: var(--heading);
+    font-size: 1.5rem;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"]{
+    height: 1.5rem;
+}
+
+textarea{
+    height: 6rem;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea{
+    display: block;
+    width: 90%;
+    margin: 0 5% 0.5rem 5%;
+    background-color: var(--background);
+    border: none;
+    border-radius: 6px;
+    font-family: var(--detail);
+    font-size: 1rem;
+}
+
+label:has(input[type="radio"]){
+    font-size: 1rem;
+}
+
+input[type="radio"]{
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+
+form div{
+    display: block;
+    color: var(--background);
+    font-family: var(--heading);
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+table{
+    background-color: var(--accent-color);
+    width: 100%;
+}
+
+table, th, td{
+    border: 1px var(--font-color) solid;
+    
+}
+
+tbody th{
+    width: 25%;
+}
+
+table th{
+    font-family: var(--heading);
+    font-size: 1.5rem;
+    color: var(--background);
+    background-color: var(--main-color);
+}
+
+td{
+    font-family: var(--detail);
+    font-size: 1.5rem;
+    color: var(--font-color);
+    text-align: center;
+}
+
+td ul{
+    list-style: none;
+    font-size: 1.25rem;
+    text-align: left;
+    margin: 3px;
+}
+
+td li{
+    margin: 2px 0;
+}
+
+input[type="submit"]{
+    display: block;
+    background-color: var(--accent-color);
+    width: 50%;
+    color: var(--font-color);
+    font-family: var(--heading);
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    border: none;
+    margin: 1rem 25%;
+}
+
+.thanks{
+    grid-column: 2/3;
 }
