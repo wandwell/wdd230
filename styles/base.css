@@ -19,7 +19,7 @@ img{
 }
 
 nav{
-    background-color: #978678;
+    background-color: #6E3C56;
 }
 
 ul{
@@ -77,6 +77,7 @@ main {
     margin: 0;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
+    text-align: center;
 }
 
 .card li, .card a, .card h3{
