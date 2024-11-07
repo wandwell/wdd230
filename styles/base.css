@@ -1,0 +1,105 @@
+body{
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #9CD39C;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+img{
+    padding: 1rem;
+}
+
+nav{
+    background-color: #978678;
+}
+
+ul{
+    list-style-type: none;
+}
+
+nav ul{
+    display: contents;
+}
+
+nav a{
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    font-family: 'Inria Serif', serif;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.active{
+    text-decoration: underline;
+}
+
+nav a:hover{
+    background-color: rgba(12, 12, 11, 0.2)
+}
+
+h1 {
+    text-decoration: underline;
+    text-align: center;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 2rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5%;
+    align-content: center;
+    padding: 2rem;
+    max-width: 90%;
+}
+
+.card{
+    border: 2px black solid;
+    border-radius: 25px;
+}
+
+.card h2{
+    background-color: #9CD39C;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 0;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.card li, .card a, .card h3{
+    font-family:'Inria Serif',Serif;
+    font-size: 1.25rem;
+}
+
+.card h3{
+    text-align: center;
+}
+
+footer{
+    background-color: #9CD39C;
+    font-size: 1.5rem;
+    font-family: 'Inria Serif', serif;
+    text-align: center;
+}
+
+footer img{
+    padding: 0;
+    margin-bottom: -2%;
+}
+
+
+
+
