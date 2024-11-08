@@ -18,7 +18,7 @@ section{
     background-color: #85B581;
     color: black;
     border: 3px black solid;
-    border-radius: px;
+    border-radius: 5px;
     padding: 1rem;
     margin: 2rem;
 }
@@ -55,7 +55,7 @@ p, li{
     grid-column: 1/5;
 }
 
-#main h3, #accent h3, #font h3, #background h3{
+div h3{
     font-family: 'Manjari', sans-serif;
     font-size: 1.6rem;
 }
