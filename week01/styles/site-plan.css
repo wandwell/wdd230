@@ -1,0 +1,85 @@
+body{
+    background-color: #f1f3fc;
+}
+
+main{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+h1{
+    font-family: 'Charm', cursive;
+    text-align:center;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+section{
+    background-color: #85B581;
+    color: black;
+    border: 3px black solid;
+    border-radius: px;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.special{
+    background-color: #391126;
+    color:#f1f3fc;
+}
+
+h2{
+    font-family: 'Sahitya', serif;
+    font-size: 1.75rem;
+}
+
+h3{
+    font-family: 'Charm', cursive;
+    text-align:center;  
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+p, li{
+    font-family: 'Manjari', sans-serif;
+    font-size: 1.5rem;
+}
+
+#palette{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-evenly;
+}
+
+#palette h2{
+    grid-column: 1/5;
+}
+
+#main h3, #accent h3, #font h3, #background h3{
+    font-family: 'Manjari', sans-serif;
+    font-size: 1.6rem;
+}
+
+#accent{
+    background-color: #391126;
+    color: #f1f3fc;
+}
+
+#font{
+    background-color: black;
+    color:#f1f3fc;
+}
+
+#background{
+    background-color:#f1f3fc;
+}
+
+section h1{
+    text-align: left;
+}
+
+#wireframe{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
