@@ -3,6 +3,31 @@ body{
     margin: 0 auto;
 }
 
+body.dark{
+    background-color: black
+}
+
+main.dark{
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+#dark{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background-color: black;
+}
+
+#dark::before{
+    content: '🌙';
+}
+
+.dark #dark::before{
+    content: '🔆';
+}
+
 header{
     background-color: #9CD39C;
     display: flex;
@@ -21,13 +46,35 @@ img{
 nav{
     background-color: #6E3C56;
     font-family: 'Inria Serif', serif;
+    padding: 1.3rem;
+}
+
+#menu{
+    background-color: #6E3C56;
+    color:#9CD39C;
+    font-size: 2rem;
+    position: absolute;
+    right: 5px;
+    border: none;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
 }
 
 ul{
     list-style-type: none;
 }
 
-nav ul{
+#navigation {
+    display: none;
+}
+
+#navigation.open{
     display: contents;
 }
 
@@ -63,11 +110,16 @@ main {
     align-content: center;
     padding: 2rem;
     max-width: 90%;
+    margin: 0 auto;
 }
 
 .card{
     border: 2px black solid;
     border-radius: 25px;
+}
+
+.dark .card{
+    border-color: white;
 }
 
 .card h2{
@@ -81,9 +133,19 @@ main {
     text-align: center;
 }
 
+.dark h2{
+    background-color: #6E3C56;
+}
+
 .card li, .card a, .card h3{
     font-family:'Inria Serif',Serif;
     font-size: 1.25rem;
+    color:black;
+    text-decoration: none;
+}
+
+.dark li, .dark a, .dark h3{
+    color: white;
 }
 
 .card h3{
