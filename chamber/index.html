@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anaconda Chamger of Commerce</title>
+    <title>Anaconda Chamber of Commerce</title>
     <meta name="description" content="Chamber of Commerce Project for WDD230">
     <meta name="author" content="Sariah Wandler">
     <link rel="icon" href="anaconda.ico">
@@ -11,11 +11,80 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="">
     <meta property="og:url" content="https://wandwell.github.io/wdd230/chamber">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Manjari:wght@100;400;700&family=Sahitya:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
-   <header></header>
-   <nav></nav>
-   <main></main> 
-   <footer></footer>
+   <header>
+    <img class="logo" src="images/logo.jpg" alt="logo for Anaconda Chamber of Commerce" height="100px" width="100px" >
+    <h2>Anaconda<br> Chamber of Commerce</h2>
+    <ul class="social"></ul>
+   </header>
+   <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li>
+                <a class="active" href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Discover</a>
+            </li>
+            <li>
+                <a href="#">Directory</a>
+            </li>
+            <li>
+                <a href="#">Join</a>
+            </li>
+        </ul>
+   </nav>
+   <main>
+        <img class="hero" src="images/hero.jpg" alt="Picture of (old) Anaconda City Hall">
+        <button id="action">Join Our community Today!</button>
+        <section>
+            <h2>Current Events</h2>
+            <p>Current Event 1</p>
+            <p>Current Event 2</p>
+        </section>
+        <section>
+            <h2>Weather</h2>
+            <p>This is the weather</p>
+        </section>
+        <section id="spotlight">
+            <h2>Business Spotlight</h2>
+            <div>
+                <h2 class="name">Business Name</h2>
+                <p class ="description">Description</p>
+                <p class="contact">Contact Information</p>
+            </div>
+            <div>
+                <h2 class="name">Business Name</h2>
+                <p class ="description">Description</p>
+                <p class="contact">Contact Information</p>
+            </div>
+            <div>
+                <h2 class="name">Business Name</h2>
+                <p class ="description">Description</p>
+                <p class="contact">Contact Information</p>
+            </div>
+        </section>
+   </main> 
+   <footer>
+        <img class="logo" src="images/logo.jpg" alt="Logo of Anaconda Chamber of Commerce">
+        <h2>Anaconda Chamber of Commerce</h2>
+        <section class="contact">
+            <p>Email: </p>
+            <p>address</p>
+            <p>Phone Number: </p>
+        </section>
+        <ul class="social"></ul>
+        <section class='copyright'>
+            <p>&copy;<span id="year"></span> <br>| Sariah Wandler | <br>Project for WDD230</p>
+            <p>Last Modified:</p>
+        </section>
+    </footer>   
+    <script src="scripts/menu.js"></script>
 </body>
 </html>
