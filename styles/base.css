@@ -103,14 +103,20 @@ h1 {
     font-size: 2rem;
 }
 
+.hero img{
+    height: auto;
+    width: 100%;
+    padding: 0;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 5%;
+    gap: 1rem;
     align-content: center;
     padding: 2rem;
     max-width: 90%;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 .card{
@@ -150,6 +156,13 @@ main {
 
 .card h3{
     text-align: center;
+}
+
+iframe{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
 
 footer{
