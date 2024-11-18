@@ -3,12 +3,20 @@ body{
 }
 
 header{
+    display: flex;
     background-color: #391126;
     color: #f2f3f7;
     padding: 5px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+}
+
+header .logo{
+    margin: 0;
+    padding: 1rem;
+}
+
+header .social{
+    flex-direction: column;
+    margin: 0 0 0 auto;
 }
 
 h1{
@@ -21,9 +29,9 @@ h1{
     background-color: #391126;
     color:#f1f3fc;
     font-size: 1.5rem;
-    position: absolute;
-    right: 1rem;
-    top: 7.5rem;
+    position: relative;
+    left: 95%;
+    bottom: -.7rem;
     border: none;
 }
 
@@ -41,8 +49,11 @@ nav{
     margin: -1px auto;
 }
 
-.navigation.open{
+ul{
     list-style: none;
+}
+
+.navigation.open{
     display: contents;
     text-align: center;
 }
@@ -54,20 +65,54 @@ nav{
 nav a{
     display: block;
     font-family: 'Sahitya', serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
     text-decoration: none;
     color: #f2f3f7;  
     padding: 1rem;
 }
 
-main section{
+.active{
+    text-decoration: underline;
+}
+
+nav a:hover{
+    background-color: rgba(234, 234, 236, 0.2)
+}
+
+.hero{
+    background-color: #f1f3fc;
+    border: none;
+    padding: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+#action{
+    position: relative;
+    top: -4rem;
+    left: 10%;
+    right: 10%;
+    font-size: 1.25rem;
+    font-family: 'Charm', cursive;
+    font-weight: bolder;
+    padding: .5rem;
+    width: 80%;
+    margin: auto;
+    background-color: #85b581;
+    color: black;
+}
+
+main section, main div{
     background-color: #85b581;
     color: black;
     border: 3px black solid;
     border-radius: 5px;
     padding: 1rem;
-    margin: 2rem;
+    margin: 1rem;
 }
 
 h2{
@@ -76,13 +121,76 @@ h2{
     text-align: center;
 }
 
+#spotlight div{
+    border: 3px black solid;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#spotlight p{
+    text-align: center;
+}
+
+h3{
+    font-family: 'Sahitya', serif;
+    font-size: 1.5rem;
+}
+
+p{
+    font-family: 'Manjari', sans-serif;
+    font-size: 1.25rem;
+    padding: 2px;
+}
+
+.name, .contact{
+    text-align: center;
+}
+
 footer{
     background-color: #391126;
     color: #f1f3fc;
+}
+
+footer .logo{
+    margin: 0 auto;
+    display: block;
+    padding-top: 5px;
+}
+
+footer h2{
+    font-family: 'Charm', cursive;
+    font-size: 1.5rem;
+    padding-left: 1rem;
 }
 
 .copyright{
     text-align: center;
 }
 
+.copyright p{
+    font-size: 1rem;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.social img{
+    background-color: #f1f3fc;
+    border-radius: 5px;
+    border: 3px #f1f3fc solid;
+    margin: 5px;
+    width: 25px;
+}
+
+.logo{
+    width: 100px;
+}
+
+.gallery img{
+    margin-bottom: 10px;
+}
 

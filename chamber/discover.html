@@ -9,7 +9,7 @@
     <link rel="icon" href="anaconda.ico">
     <meta property="og:title" content="Anaconda Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://wandwell.github.io/wdd230/chamber/images/hero.jpg">
+    <meta property="og:image" content="https://wandwell.github.io/wdd230/chamber/images/hero.webp">
     <meta property="og:url" content="https://wandwell.github.io/wdd230/chamber">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,10 +38,10 @@
         <button id="menu"></button>
         <ul class="navigation">
             <li>
-                <a class="active" href="#">Home</a>
+                <a href="index.html">Home</a>
             </li>
             <li>
-                <a href="discover.html">Discover</a>
+                <a class="active" href="#">Discover</a>
             </li>
             <li>
                 <a href="#">Directory</a>
@@ -51,49 +51,35 @@
             </li>
         </ul>
    </nav>
-   <main>
-        <div class="hero">
-            <picture>
-                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
-                <img src="images/hero.webp" alt="Picture of (old) Anaconda City Hall" width="1200" height="600">
-            </picture>
-            <button id="action">Join Our Community Today!</button>
+   <main id="discover">
+        <section class="aside">
+            <h2 id="visits">Welcome Back!</h2>
+        </section>
+        <section class="aside">
+            <h2>Demographics</h2>
+            <p>Population: 9,421 People</p>
+            <p>Median Household Income: $42,000</p>
+        </section>
+        <section class="aside">
+            <h2>Climate</h2>
+            <p>Elevation: 5,335 feet</p>
+            <p>Annual rainfall: 14 inches</p>
+            <p>Growing season: 114 days</p>
+            <p>Annual snowfall: 48.0 inches</p>
+            <p>Average Tempature range: 10°F - 82°F</p>
+        </section>
+        <section class="aside">
+            <h2>Anaconda History</h2>
+            <p>Nestled in the heart of the beautiful Deer Lodge Valley, Anaconda was founded in 1883 during the peak of the copper mining boom. It became the headquarters of the Anaconda Copper Mining Company, one of the largest copper producers in the world. Today, the town embraces its rich industrial heritage while offering a welcoming community and scenic landscapes. Visitors can explore its historic architecture, enjoy outdoor recreation in the surrounding mountains and rivers, and experience the charm of a town that played a pivotal role in Montana’s development.</p>
+        </section>
+        <div class="gallery">
+            <img src="images/christmas.webp" alt="Anaconda Christmas Stroll" loading="lazy" width="300" height="200">
+            <img src="images/courthouse.webp" alt="Anaconda Courthouse" loading="lazy" width="300" height="200">
+            <img src="images/stack.webp" alt="Anaconda Stack State Park" loading="lazy" width="300" height="200">
+            <img src="images/trail.webp" alt="Old Smelter Ruins" loading="lazy" width="300" height="200">
+            <img src="images/washoe.webp" alt="Washoe Park" loading="lazy" width="300" height="200">
+            <img src="images/oldSmelter.webp" alt="Drawing of Anaconda Copper CO. Smelter" loading="lazy" width="300" height="200">
         </div>
-        <section>
-            <h2>Upcoming Events</h2>
-            <ul>
-                <li>
-                    <h3>December 7 - Anaconda Christmas Stroll</h3>
-                    <p>The Anaconda Christmas Stroll is an annual holiday event where Anaconda's Main Street comes alive with festive lights, holiday decorations, and the sounds of carolers. Local shops stay open late for special deals, and the streets are filled with holiday cheer, including a visit from Santa Claus.</p>
-                </li>
-                <li>
-                    <h3>December 20 - Anaconda Winter Festival</h3>
-                    <p> Held at Washoe park, the festival is a fun, active event for all ages. With holiday-themed contests and crafts like ice-carving, snowman building, and ornament creation, your sure to bring something home for grandma. Local vendors serve up warm treats like hot cocoa and roasted chestnuts.</p>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Weather</h2>
-            <p>This is the weather</p>
-        </section>
-        <section id="spotlight">
-            <h2>Business Spotlight</h2>
-            <div>
-                <h3 class="name">Big Sky Outdoor Gear Co.</h3>
-                <p class ="description">From hiking and camping gear to ski equipment and fishing supplies, Big Sky Outdoor Gear Co. specializes in durable, weather-resistant products. We also offers guided tours, gear rentals, and workshops.</p>
-                <p class="contact">123 Main Street<br>(406)555-0123</p>
-            </div>
-            <div>
-                <h3 class="name">The Rustic Candle Co.</h3>
-                <p class ="description"> An artisan candle-making business that specializes in hand-poured candles inspired by Montana’s landscapes and seasons, we use local, natural ingredients to create unique scents of Big Sky Country.</p>
-                <p class="contact">456 Oak Avenue<br>(406)555-0456</p>
-            </div>
-            <div>
-                <h3 class="name">Wildflower Market & Deli</h3>
-                <p class ="description">A cozy, neighborhood grocery and sandwich shop that focuses on fresh ingredients, we serves hearty sandwiches, soups, and baked goods. We also host weekly farmers' markets and offer cooking classes focused on local produce.</p>
-                <p class="contact">101 Birch Lane<br>(406)555-0789</p>
-            </div>
-        </section>
    </main> 
    <footer>
         <img class="logo" src="images/logo.webp" alt="Logo of Anaconda Chamber of Commerce" width="100" height="100">
@@ -121,5 +107,6 @@
     </footer>   
     <script src="scripts/menu.js"></script>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/message.js"></script>
 </body>
 </html>
