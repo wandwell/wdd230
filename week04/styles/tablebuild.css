@@ -1,0 +1,37 @@
+table{
+    border: thin solid #57213d;
+    border-collapse: collapse;
+}
+
+caption{
+    caption-side: bottom;
+}
+
+th, td{
+    padding: 1rem;
+    border: thin solid #57213d;
+    text-align: center;
+}
+
+thead{
+    background-color: #57213d;
+    color: white;
+    font-size: 2rem;
+}
+
+thead td{
+    background-color: #57213d;
+}
+
+thead tr:last-child{
+    background-color: #6E3C56;
+}
+
+tbody{
+    color: black;
+    font-size: 1.5rem;
+}
+
+tbody tr:nth-child(2){
+    background-color: #dfc0d0;
+}
