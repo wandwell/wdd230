@@ -110,6 +110,19 @@ h1 {
     padding: 0;
 }
 
+.hero-label{
+    position: absolute;
+    top: 350px;
+    left: 50px;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 1.5rem;
+    background: radial-gradient(#fff, #6E3C56);
+	border: 1px solid rgba(0,0,0,.75);
+    border-radius: 25px;
+	padding: 1.5rem;
+	opacity: 0.75;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr;

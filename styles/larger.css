@@ -29,7 +29,11 @@
         grid-column: 1 / 3;
     }
 
-    br{
+    .hero-label{
+        left: 250px;
+    }
+
+    footer br{
         display: none;
     }
     
