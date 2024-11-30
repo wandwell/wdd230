@@ -38,7 +38,7 @@
         <button id="menu"></button>
         <ul class="navigation">
             <li>
-                <a class="active" href="#">Home</a>
+                <a href="index.html">Home</a>
             </li>
             <li>
                 <a href="discover.html">Discover</a>
@@ -47,14 +47,79 @@
                 <a href="#">Directory</a>
             </li>
             <li>
-                <a href="#">Join</a>
+                <a class=active href="#">Join</a>
             </li>
         </ul>
    </nav>
-   <main>
-        <form class="join" method="get" action="thankyou.html">    
-            <fieldset></fieldset>
+   <main id="join">
+        <form class="form" method="get" action="thankyou.html">    
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label>First Name<input type="text" name="fname" required id="fname"></label>
+                <label>Last Name<input type="text" name="lname" required id="lname"></label>
+                <label>Title/Position<input type="text" name="title" id="title" minlength="7" pattern="[a-zA-Z\s-]{7,}" required title="Please use only letters, hyphens, and spaces and use at least 7 characters."></label>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>Email<input type="email" name="email" id="email" placeholder="someone@gmail.com"></label>
+                <label>Mobile Phone<input type="tel" name="phone" id="phone" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                <div>Membership Level</div>
+                <label><input type="radio" name="membership" value="np">Non-Profit</label>
+                <label><input type="radio" name="membership" value="bronze">Bronze</label>
+                <label><input type="radio" name="membership" value="silver">Silver</label>
+                <label><input type="radio" name="membership" value="gold">Gold</label>
+                <label>Organization Description<textarea name="description" id="description"></textarea></label>
+            </fieldset>
+            <input type="hidden" name="timestamp" id="timestamp">
+            <input type="submit" value="Become a Member">
         </form>
+        <section>
+            <h2>Membership<br>Pricing</h2>
+            <p>Non-profit organizatons can enjoy all the benefits of a Gold Memberships free of charge when they join with us.</p>
+            <div class="benfits">
+                <h3>Bronze</h3>
+                <h4>$200/year</h4>
+                <ul>
+                    <li>Inclusion in Chamber Directory</li>
+                    <li>Access to Monthly Networking Events</li>
+                    <li>Exclusive Member Discounts for Chamber events and services</li>
+                    <li>Access to Members-Only Resources</li>
+                    <li>Quarterly Newsletter Subscription with business tips and Chamber updates</li>
+                    <li>Access to Basic Business Development Workshops (online)</li>
+                </ul>
+            </div>
+            <div class="benfits">
+                <h3>Silver</h3>
+                <h4>$500/year</h4>
+                <ul>
+                    <li>All Bronze Membership Features</li>
+                    <li>Priority Business Listing in Directory with logo</li>
+                    <li>Complimentary Admission to 2 Networking Events per year</li>
+                    <li>Free or Discounted Access to a variety of Chamber-hosted seminars and workshops</li>
+                    <li>Discounted Sponsorship Opportunities for Chamber events (up to 10% off)</li>
+                    <li>Become Part of the rotation of Business Spotlight on Homepage</li>
+                    <li>Exclusive Invitations to Member-Only roundtable discussions or forums</li>
+                    <li>Voting Rights in Chamber elections</li>
+                </ul>
+            </div>
+            <div class="benfits">
+                <h3>Gold</h3>
+                <h4>$1000/year</h4>
+                <ul>
+                    <li>All Silver Membership Features</li>
+                    <li>Premier Business Listing on the Chamber website with logo and direct link to your website</li>
+                    <li>Unlimited Complimentary Admission to all Networking Events</li>
+                    <li>Free Entry to All Chamber Workshops and access to special events</li>
+                    <li>Exclusive Sponsorship Opportunities</li>
+                    <li>Access to Chamber Leadership for strategic advice and support</li>
+                    <li>VIP Invitations to networking mixers, galas, and other special events</li>
+                    <li>Priority Consideration for Chamber awards and recognitions</li>
+                </ul>
+            </div>
+        </section>
    </main> 
    <footer>
         <img class="logo" src="images/logo.webp" alt="Logo of Anaconda Chamber of Commerce" width="100" height="100">

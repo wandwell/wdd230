@@ -23,7 +23,7 @@
     }
 
     main{
-        max-width: 80%;
+        max-width: 90%;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -93,5 +93,13 @@
 
     .gallery img:hover{
         box-shadow: 0 0 50px #333;
+    }
+
+    #join{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .thanks{
+        display: block;
     }
 }

@@ -193,3 +193,109 @@ footer h2{
     margin-bottom: 10px;
 }
 
+.form fieldset{
+    border: 3px black solid;
+    border-radius: 5px;
+    background-color: #85b581;
+    position: relative;
+    margin: 1rem
+}
+
+.form legend{
+    font-family: 'Sahitya', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0 .5rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-weight: bold;
+}
+
+.form label{
+    display: block;
+    margin-top: 1rem;
+    font-family: 'Manjari', sans-serif;
+    font-size: 1.25rem;
+    padding: .5rem;
+    margin-left: -.5rem;
+}
+
+.form fieldset div{
+    font-family: 'Manjari', sans-serif;
+    font-size: 1.25rem;
+    padding: 0;
+    border: none;
+    margin: 3rem 0 0 0;
+}
+
+.form input, .form textarea{
+    padding: .75rem;
+    font-family: 'Manjari', sans-serif;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form textarea{
+    width: 94%;
+}
+
+.form input[type="radio"]{
+    margin: 0 3%;
+}
+
+.form textarea{
+    height: 10rem
+}
+
+.form label:nth-child(2){
+    margin-top: 3rem;
+}
+
+.form input[type="submit"]{
+    width: 90%;
+    margin: 0 5% 1rem;
+    background-image: radial-gradient(#391126, #a34e7a);
+    color: white;
+    font-family: 'Charm', cursive;
+    font-size: 1.5rem;
+    border: 3px black solid;
+}
+
+.form input:required{
+    border-bottom: 8px solid #ca0505a8;
+}
+
+.form input:required:valid{
+    border-bottom: 8px solid #05ca479f;
+}
+
+#join h3{
+    font-family: 'Sahitya', serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0;
+}
+
+#join h4{
+    font-family: 'Manjari', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0;
+}
+
+#join ul{
+    list-style: disc;
+}
+
+#join li{
+    font-family: 'Manjari', sans-serif;
+    font-size: 1.25rem;
+    margin-left: -1rem;
+}
+
+.benefits{
+    margin: 0 0 1rem 0;
+}
+
