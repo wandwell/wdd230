@@ -202,5 +202,12 @@ footer img{
     padding: 0;
 }
 
+#learning a::after{
+    content: " | ";
+}
+
+#learning a:last-child::after{
+    content: "";
+}
 
 
