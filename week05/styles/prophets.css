@@ -1,0 +1,46 @@
+#cards section{
+    background-color: #9CD39C;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 1rem auto 1rem auto;
+    padding: 1rem;
+}
+
+#cards section img{
+    height: auto;
+    width: 100%;
+}
+
+header{
+    background-color: #6E3C56;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+}
+
+footer{
+    background-color: #6E3C56;
+    color: white;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width:500px) {
+    #cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    #cards section{
+        margin: 0 auto;
+    }
+
+    section:last-child{
+        grid-column: 1/5;
+        margin: 0 25%;
+    }
+}

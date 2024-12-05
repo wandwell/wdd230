@@ -191,6 +191,16 @@ footer img{
     margin-bottom: -2%;
 }
 
+#weather{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#weather img{
+    padding: 0;
+}
 
 
 

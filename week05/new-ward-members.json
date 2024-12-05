@@ -1,0 +1,18 @@
+{
+    "family": "Wandler",
+    "moved-in": "June 6, 2024",
+    "individuals": 2,
+    "visited": true,
+    "members": [
+        {
+            "name": "Sariah",
+            "gender": "female",
+            "birthdate": "July 7, 1994"
+        },
+        {
+            "name": "Cody",
+            "gender": "male",
+            "birthdate": "March 3, 1994"
+        }
+    ]
+}
