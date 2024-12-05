@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Big Sky Outdoor Co.",
+            "address": "123 Main Street",
+            "phone": "(406)555-0123",
+            "URL": "www.BigSKyBigOutdoors.com",
+            "image": "images/big-sky.webp",
+            "membership": "Gold",
+            "description": "From hiking and camping gear to ski equipment and fishing supplies, Big Sky Outdoor Gear Co. specializes in durable, weather-resistant products. We also offers guided tours, gear rentals, and workshops."
+        },
+        {
+            "name": "The Rustic Candle Co.",
+            "address": "456 Oak Avenue",
+            "phone": "(406)555-0456",
+            "URL": "www.RusticLights.com",
+            "image": "images/candle.webp",
+            "membership": "Silver",
+            "description": "An artisan candle-making business that specializes in hand-poured candles inspired by Montana’s landscapes and seasons, we use local, natural ingredients to create unique scents of Big Sky Country."
+        },
+        {
+            "name": "WildFlower Market and Deli",
+            "address": "101 Birch Lane",
+            "phone": "(406)555-0789",
+            "URL": "www.wildflowermarket.com",
+            "image": "images/candle.webp",
+            "membership": "Silver",
+            "description": "A cozy, neighborhood grocery and sandwich shop that focuses on fresh ingredients, we serves hearty sandwiches, soups, and baked goods. We also host weekly farmers' markets and offer cooking classes focused on local produce."
+        },
+        {
+            "name": "Smelter City Leatherworks",
+            "address": "101 Saddleback Lane",
+            "phone": "(406) 555-1122",
+            "URL": "www.SmelterCityLeather.com",
+            "image": "images/smelter.webp",
+            "membership": "Gold",
+            "description": "Specializing in handcrafted leather products, Big Sky Leatherworks creates everything from custom saddles to durable wallets, belts, and bags. Each piece is made with attention to detail and the finest materials."
+        },
+        {
+            "name": "Pioneer Repair & Restoration",
+            "address": "250 Main Street",
+            "phone": "(406) 555-2233",
+            "URL": "www.PioneerRestoration.com",
+            "image": "images/pioneer.webp",
+            "membership": "Bronze",
+            "description": "Specializing in vintage car restoration and general vehicle maintenance, Pioneer Repair & Restoration combines modern expertise with an appreciation for the classics."
+        },
+        {
+            "name": "Anaconda Artison Works",
+            "address": "78 Granite Avenue",
+            "phone": "(406) 555-3344",
+            "URL": "www.AnacondaArtison.org",
+            "image": "images/artisan.webp",
+            "membership": "Non-Profit",
+            "description": " Showcasing the talents of local artists and craftspeople, this gallery features unique handmade jewelry, pottery, and paintings that capture the essence of Montana life."
+        },
+        {
+            "name": "Copper Canyon Coffee Roasters",
+            "address": "500 Copper Road",
+            "phone": "(406) 555-4455",
+            "URL": "www.CopperCoffee.com",
+            "image": "images/coffee.webp",
+            "membership": "Silver",
+            "description": "A cozy café serving locally roasted coffee blends inspired by Anaconda’s rich mining history. With rustic décor and mountain views, it's a favorite spot for both locals and tourists."
+        }
+    ]
+}
