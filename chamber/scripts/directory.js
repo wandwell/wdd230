@@ -18,7 +18,19 @@ async function getDirectory() {
 getDirectory();
 
 function displayMembers (members){
-    members.forEach(member => {
+    let np = sortMembers (members, "np");
+    let gold = sortMembers (members, "gold");
+    let silver = sortMembers (members, "silver");
+    let bronze = sortMembers(members, "bronze");
+
+    createCards(np, "np");
+    createCards(gold), "gold";
+    createCards(silver, "silver");
+    createCards(bronze, "bronze");
+}
+
+function createCards (array, membership){
+    array.forEach(member => {
         let card = document.createElement("section");
         let name = document.createElement("h2");
         let desc = document.createElement("p");
@@ -30,11 +42,9 @@ function displayMembers (members){
         address.textContent = `Address: ${member.address}`;
         phone.textContent = `Phone: ${member.phone}`;
 
+        card.classList.toggle(membership);
         card.appendChild(name);
-        card.appendChild(desc);
-        card.appendChild(address);
-        card.appendChild(phone);
-
+        
         if (member.membership != "bronze"){
             let logo = document.createElement("img");
             let url = document.createElement("a")
@@ -42,12 +52,28 @@ function displayMembers (members){
             logo.setAttribute("src", member.image);
             logo.setAttribute("alt", "logo of company");
             url.setAttribute("href", "#");
-            url.textContent = `Website: ${member.URL}`
+            url.innerHTML = `Website:<br>${member.URL}`
 
             card.appendChild(url);
             card.appendChild(logo);
         };
 
+        card.appendChild(desc);
+        card.appendChild(address);
+        card.appendChild(phone);
+
         document.querySelector("#directory").appendChild(card);
     });
+}
+
+function sortMembers (members, membership) {
+    let array = [];
+
+    members.forEach(member => {
+        if (membership === member.membership){
+            array.push(member);
+        }
+    });
+
+    return array;
 }

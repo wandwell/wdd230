@@ -299,3 +299,24 @@ footer h2{
     margin: 0 0 1rem 0;
 }
 
+#directory a{
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Manjari', sans-serif;
+    font-size: 1.25rem;
+    padding: 2px;
+}
+
+#directory > div{
+    display: none;
+}
+
+#directory img{
+    height: 200px;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+}
+
