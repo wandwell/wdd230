@@ -52,12 +52,16 @@
         </ul>
    </nav>
    <main>
+        <div id="banner">
+            <button id="closeBanner">❌</button>
+            <h3>Please Join Us for our Chamber of Commerce Meet and Greet on Wednesday, <span></span> at 7pm.</h3>
+        </div>
         <div class="hero">
             <picture>
                 <source srcset="images/hero-small.webp" media="(max-width: 500px)">
                 <img src="images/hero.webp" alt="Picture of (old) Anaconda City Hall" width="1200" height="600">
             </picture>
-            <button id="action">Join Our Community Today!</button>
+            <button id="action" onclick="window.location.href='join.html'">Join Our Community Today!</button>
         </div>
         <section>
             <h2>Upcoming Events</h2>
@@ -72,27 +76,11 @@
                 </li>
             </ul>
         </section>
-        <section>
+        <section id="weather">
             <h2>Weather</h2>
-            <p>This is the weather</p>
         </section>
         <section id="spotlight">
             <h2>Business Spotlight</h2>
-            <div>
-                <h3 class="name">Big Sky Outdoor Gear Co.</h3>
-                <p class ="description">From hiking and camping gear to ski equipment and fishing supplies, Big Sky Outdoor Gear Co. specializes in durable, weather-resistant products. We also offers guided tours, gear rentals, and workshops.</p>
-                <p class="contact">123 Main Street<br>(406)555-0123</p>
-            </div>
-            <div>
-                <h3 class="name">The Rustic Candle Co.</h3>
-                <p class ="description"> An artisan candle-making business that specializes in hand-poured candles inspired by Montana’s landscapes and seasons, we use local, natural ingredients to create unique scents of Big Sky Country.</p>
-                <p class="contact">456 Oak Avenue<br>(406)555-0456</p>
-            </div>
-            <div>
-                <h3 class="name">Wildflower Market & Deli</h3>
-                <p class ="description">A cozy, neighborhood grocery and sandwich shop that focuses on fresh ingredients, we serves hearty sandwiches, soups, and baked goods. We also host weekly farmers' markets and offer cooking classes focused on local produce.</p>
-                <p class="contact">101 Birch Lane<br>(406)555-0789</p>
-            </div>
         </section>
    </main> 
    <footer>
@@ -121,5 +109,8 @@
     </footer>   
     <script src="scripts/menu.js"></script>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlight.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
-const baseURL = "https://wandwell.github.io/wdd230/chamber/"
-const membersURL = "https://wandwell.github.io/wdd230/chamber/data/members.json"
+const baseURL = "https://wandwell.github.io/wdd230/chamber/";
+const membersURL = "https://wandwell.github.io/wdd230/chamber/data/members.json";
 
 async function getDirectory() {
     try{
@@ -42,7 +42,6 @@ function createCards (array, membership){
         address.textContent = `Address: ${member.address}`;
         phone.textContent = `Phone: ${member.phone}`;
 
-        card.classList.toggle(membership);
         card.appendChild(name);
         
         if (member.membership != "bronze"){
